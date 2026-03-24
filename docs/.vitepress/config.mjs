@@ -15,6 +15,13 @@ export default defineConfig({
     darkModeSwitchLabel: 'Tema Escuro',
     sidebarMenuLabel: 'Menu',
     returnToTopLabel: 'Voltar ao topo',
+    notFound: {
+      title: 'Página não Encontrada',
+      quote: 'Acho que você navegou longe demais e acabou se perdendo no framework...',
+      linkLabel: 'Voltar ao início',
+      linkText: 'Me leve para casa',
+      code: '404'
+    },
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Utilitários', link: '/utils' }
