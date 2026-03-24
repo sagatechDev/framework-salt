@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Cores baseadas no Tailwind (estilo Livewire/Laravel - Pink/Rosa Choque) */
+  --vp-c-brand-1: #f472b6;       /* livewire pink */
+  --vp-c-brand-2: #db2777;
+  --vp-c-brand-3: #9d174d;
+  --vp-c-brand-soft: rgba(244, 114, 182, 0.14);
+
+  /* Fontes modernas e limpas no estilo das docs mais famosas */
+  --vp-font-family-base: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Formatação clean de layout */
+  --vp-layout-max-width: 1440px;
+}
+
+/* Forçar fundos para um tom muito polido, modo claro semelhante ao Livewire */
+:root[class~="dark"] {
+  --vp-c-bg: #111827;            /* dark mode Slate-900 elegante */
+  --vp-c-bg-soft: #1f2937;
+  --vp-c-bg-mute: #374151;
+  --vp-c-brand-1: #f472b6;
+}
+
+/* Modificar destaques dos links atuais */
+.VPSidebarItem.is-active > .item {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600;
+}
+
+.VPDoc h1, .VPDoc h2 {
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
