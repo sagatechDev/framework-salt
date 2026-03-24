@@ -5,18 +5,18 @@
    ============================================= */
 
 :root {
-  /* Paleta Filament — Fundo Creme e Âmbar */
-  --vp-c-brand-1: #e38a00;
-  --vp-c-brand-2: #c47a00;
-  --vp-c-brand-3: #a36600;
-  --vp-c-brand-soft: rgba(227, 138, 0, 0.12);
+  /* Paleta Salt — Fundo Limpo e Brand Teal (Azul Esverdeado) */
+  --vp-c-brand-1: #0082b4; /* Azul mais claro do triângulo */
+  --vp-c-brand-2: #005b76; /* Azul esverdeado profundo (texto ERP) */
+  --vp-c-brand-3: #003f54; 
+  --vp-c-brand-soft: rgba(0, 91, 118, 0.12);
 
-  /* Backgrounds quentes e acolhedores */
-  --vp-c-bg: #f5f1ed;
-  --vp-c-bg-soft: #ede8e3;
-  --vp-c-bg-mute: #e6e0d9;
-  --vp-c-bg-elv: #f5f1ed;
-  --vp-c-bg-alt: #ede8e3;
+  /* Backgrounds Limpos e Claros (Padrão Corporativo) */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-soft: #f9f9f9;
+  --vp-c-bg-mute: #f1f1f1;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-alt: #f1f1f1;
 
   /* Texto — quentes, nunca frios */
   --vp-c-text-1: #1d1b16;
@@ -40,50 +40,50 @@
   --vp-sidebar-bg-color: #f5f1ed;
 
   /* Code */
-  --vp-code-bg: #1e1c1a;
-  --vp-code-color: #e8dcc8;
-  --vp-code-block-bg: #1e1c1a;
-  --vp-code-block-color: #e8dcc8;
-  --vp-code-tab-bg: #252320;
-  --vp-code-tab-active-text-color: #e38a00;
-  --vp-code-lang-color: #76746f;
-  --vp-code-line-highlight-color: rgba(227, 138, 0, 0.08);
+  --vp-code-bg: #1a1b1d;
+  --vp-code-color: #cbd5e1;
+  --vp-code-block-bg: #1a1b1d;
+  --vp-code-block-color: #cbd5e1;
+  --vp-code-tab-bg: #222428;
+  --vp-code-tab-active-text-color: #0082b4;
+  --vp-code-lang-color: #94a3b8;
+  --vp-code-line-highlight-color: rgba(0, 130, 180, 0.1);
 
   /* Botões */
-  --vp-button-brand-bg: #e38a00;
-  --vp-button-brand-hover-bg: #c47a00;
-  --vp-button-brand-active-bg: #a36600;
+  --vp-button-brand-bg: #005b76;
+  --vp-button-brand-hover-bg: #0082b4;
+  --vp-button-brand-active-bg: #003f54;
   --vp-button-brand-text: #ffffff;
 
   /* Layout */
   --vp-layout-max-width: 1440px;
 }
 
-/* ======= DARK MODE — Filament Dark ======= */
+/* ======= DARK MODE — Salt Dark ======= */
 :root.dark {
-  --vp-c-bg: #1a1815;
-  --vp-c-bg-soft: #221f1c;
-  --vp-c-bg-mute: #2d2925;
-  --vp-c-bg-elv: #221f1c;
-  --vp-c-bg-alt: #221f1c;
+  --vp-c-bg: #0f172a;
+  --vp-c-bg-soft: #1e293b;
+  --vp-c-bg-mute: #334155;
+  --vp-c-bg-elv: #1e293b;
+  --vp-c-bg-alt: #0f172a;
 
-  --vp-c-text-1: #f0ebe4;
-  --vp-c-text-2: #c4bdb5;
-  --vp-c-text-3: #8a8480;
+  --vp-c-text-1: #f8fafc;
+  --vp-c-text-2: #cbd5e1;
+  --vp-c-text-3: #94a3b8;
 
-  --vp-c-divider: #3a3630;
-  --vp-c-border: #3a3630;
-  --vp-c-gutter: #110f0d;
+  --vp-c-divider: #334155;
+  --vp-c-border: #334155;
+  --vp-c-gutter: #020617;
 
-  --vp-nav-bg-color: #1a1815;
-  --vp-nav-border-color: #3a3630;
-  --vp-sidebar-bg-color: #1a1815;
+  --vp-nav-bg-color: #0f172a;
+  --vp-nav-border-color: #334155;
+  --vp-sidebar-bg-color: #0f172a;
 
-  --vp-c-brand-1: #f5a623;
-  --vp-c-brand-soft: rgba(245, 166, 35, 0.15);
+  --vp-c-brand-1: #06b6d4; /* Azul vibrante para destacar no fundo escuro */
+  --vp-c-brand-soft: rgba(6, 182, 212, 0.15);
 
-  --vp-code-bg: #111004;
-  --vp-code-block-bg: #111004;
+  --vp-code-bg: #020617;
+  --vp-code-block-bg: #020617;
 }
 
 /* ======= TIPOGRAFIA ======= */
