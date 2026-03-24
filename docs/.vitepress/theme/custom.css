@@ -1,35 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Albert+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* =============================================
+   FILAMENT-STYLE THEME — Framework Salt Docs
+   ============================================= */
 
 :root {
-  /* Cores baseadas no Tailwind (estilo Livewire/Laravel - Pink/Rosa Choque) */
-  --vp-c-brand-1: #f472b6;       /* livewire pink */
-  --vp-c-brand-2: #db2777;
-  --vp-c-brand-3: #9d174d;
-  --vp-c-brand-soft: rgba(244, 114, 182, 0.14);
+  /* Paleta Filament — Fundo Creme e Âmbar */
+  --vp-c-brand-1: #e38a00;
+  --vp-c-brand-2: #c47a00;
+  --vp-c-brand-3: #a36600;
+  --vp-c-brand-soft: rgba(227, 138, 0, 0.12);
 
-  /* Fontes modernas e limpas no estilo das docs mais famosas */
-  --vp-font-family-base: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* Backgrounds quentes e acolhedores */
+  --vp-c-bg: #f5f1ed;
+  --vp-c-bg-soft: #ede8e3;
+  --vp-c-bg-mute: #e6e0d9;
+  --vp-c-bg-elv: #f5f1ed;
+  --vp-c-bg-alt: #ede8e3;
 
-  /* Formatação clean de layout */
+  /* Texto — quentes, nunca frios */
+  --vp-c-text-1: #1d1b16;
+  --vp-c-text-2: #4b4840;
+  --vp-c-text-3: #76746f;
+
+  /* Divisores */
+  --vp-c-divider: #dcd7d0;
+  --vp-c-border: #dcd7d0;
+  --vp-c-gutter: #dcd7d0;
+
+  /* Fontes Filament */
+  --vp-font-family-base: 'Albert Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+
+  /* Nav */
+  --vp-nav-bg-color: #f5f1ed;
+  --vp-nav-border-color: #dcd7d0;
+
+  /* Sidebar */
+  --vp-sidebar-bg-color: #f5f1ed;
+
+  /* Code */
+  --vp-code-bg: #1e1c1a;
+  --vp-code-color: #e8dcc8;
+  --vp-code-block-bg: #1e1c1a;
+  --vp-code-block-color: #e8dcc8;
+  --vp-code-tab-bg: #252320;
+  --vp-code-tab-active-text-color: #e38a00;
+  --vp-code-lang-color: #76746f;
+  --vp-code-line-highlight-color: rgba(227, 138, 0, 0.08);
+
+  /* Botões */
+  --vp-button-brand-bg: #e38a00;
+  --vp-button-brand-hover-bg: #c47a00;
+  --vp-button-brand-active-bg: #a36600;
+  --vp-button-brand-text: #ffffff;
+
+  /* Layout */
   --vp-layout-max-width: 1440px;
 }
 
-/* Forçar fundos para um tom muito polido, modo claro semelhante ao Livewire */
-:root[class~="dark"] {
-  --vp-c-bg: #111827;            /* dark mode Slate-900 elegante */
-  --vp-c-bg-soft: #1f2937;
-  --vp-c-bg-mute: #374151;
-  --vp-c-brand-1: #f472b6;
+/* ======= DARK MODE — Filament Dark ======= */
+:root.dark {
+  --vp-c-bg: #1a1815;
+  --vp-c-bg-soft: #221f1c;
+  --vp-c-bg-mute: #2d2925;
+  --vp-c-bg-elv: #221f1c;
+  --vp-c-bg-alt: #221f1c;
+
+  --vp-c-text-1: #f0ebe4;
+  --vp-c-text-2: #c4bdb5;
+  --vp-c-text-3: #8a8480;
+
+  --vp-c-divider: #3a3630;
+  --vp-c-border: #3a3630;
+  --vp-c-gutter: #110f0d;
+
+  --vp-nav-bg-color: #1a1815;
+  --vp-nav-border-color: #3a3630;
+  --vp-sidebar-bg-color: #1a1815;
+
+  --vp-c-brand-1: #f5a623;
+  --vp-c-brand-soft: rgba(245, 166, 35, 0.15);
+
+  --vp-code-bg: #111004;
+  --vp-code-block-bg: #111004;
 }
 
-/* Modificar destaques dos links atuais */
+/* ======= TIPOGRAFIA ======= */
+.VPDoc h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  color: var(--vp-c-text-1);
+  line-height: 1.2;
+}
+
+.VPDoc h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.VPDoc h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* ======= NAV SUPERIOR ======= */
+.VPNav {
+  background-color: var(--vp-c-bg) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+/* ======= SIDEBAR ======= */
+.VPSidebar {
+  background-color: var(--vp-c-bg) !important;
+  border-right: 1px solid var(--vp-c-divider) !important;
+}
+
+/* Grupos da Sidebar */
+.VPSidebarItem.level-0 > .item > .text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-3) !important;
+  margin-top: 0.5rem;
+}
+
+/* Links da sidebar */
+.VPSidebarItem .item .link .text {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  transition: color 0.15s ease;
+}
+
+.VPSidebarItem .item .link:hover .text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* Link ativo — destaque laranja Filament */
 .VPSidebarItem.is-active > .item {
+  background-color: var(--vp-c-brand-soft);
+  border-radius: 8px;
+}
+
+.VPSidebarItem.is-active > .item .link .text {
   color: var(--vp-c-brand-1) !important;
   font-weight: 600;
 }
 
-.VPDoc h1, .VPDoc h2 {
-  letter-spacing: -0.025em;
+/* ======= CÓDIGO ======= */
+div[class*='language-'] {
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+div[class*='language-'] pre {
+  border-radius: 10px;
+}
+
+/* Inline code */
+:not(pre) > code {
+  background-color: var(--vp-c-bg-mute);
+  color: var(--vp-c-brand-2);
+  border-radius: 5px;
+  font-size: 0.85em;
+  padding: 0.15em 0.4em;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* ======= TABLE OF CONTENTS ======= */
+.VPDocOutlineItem a {
+  color: var(--vp-c-text-3);
+  font-size: 0.8rem;
+  transition: color 0.15s ease;
+}
+
+.VPDocOutlineItem a:hover,
+.VPDocOutlineItem.is-active a {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ======= CONTEÚDO PRINCIPAL ======= */
+.VPContent.is-home,
+.VPDoc {
+  background-color: var(--vp-c-bg);
+}
+
+/* Espaçamento mais generoso entre parágrafos */
+.vp-doc p {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+/* Tabelas com estilo filament */
+.vp-doc table {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-mute);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-3);
+}
+
+.vp-doc td, .vp-doc th {
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding: 0.6rem 1rem;
+}
+
+/* ======= RODAPÉ ======= */
+.VPDocFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+/* ======= "ON THIS PAGE" / OUTLINE ======= */
+.VPDocAside .outline-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.7rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--vp-c-text-3);
 }
