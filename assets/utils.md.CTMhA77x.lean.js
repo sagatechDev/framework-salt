@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as n,ae as e}from"./chunks/framework.DZmDXV-X.js";const E=JSON.parse('{"title":"Utilitários","description":"","frontmatter":{},"headers":[],"relativePath":"utils.md","filePath":"utils.md"}'),t={name:"utils.md"};function h(p,s,l,k,r,d){return a(),n("div",null,[...s[0]||(s[0]=[e("",50)])])}const g=i(t,[["render",h]]);export{E as __pageData,g as default};

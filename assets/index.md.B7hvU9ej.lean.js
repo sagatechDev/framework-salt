@@ -1,0 +1,1 @@
+import{_ as a,o,c as r,ae as t}from"./chunks/framework.DZmDXV-X.js";const p=JSON.parse('{"title":"Framework","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),i={name:"index.md"};function s(l,e,n,d,m,u){return o(),r("div",null,[...e[0]||(e[0]=[t("",31)])])}const h=a(i,[["render",s]]);export{p as __pageData,h as default};
