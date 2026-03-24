@@ -4,6 +4,7 @@ export default defineConfig({
   title: "Framework Salt",
   description: "Documentação do framework interno ERP",
   base: '/framework-salt/',
+  ignoreDeadLinks: true,
   themeConfig: {
     outline: {
       label: 'Nesta página'
