@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Framework Salt",
   description: "Documentação do framework interno ERP",
+  base: '/framework-salt/',
   themeConfig: {
     outline: {
       label: 'Nesta página'
